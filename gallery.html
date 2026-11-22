@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grooming Gallery &amp; Transformations | PET GROOMING Salon Demo</title>
+  <meta name="description" content="Small details, beautiful transformations. Explore the PET GROOMING Salon demonstration gallery with category filters, interactive lightbox, and before-and-after comparison slider.">
+  <meta name="keywords" content="Pet Grooming, Dog Grooming, Cat Grooming, Pet Grooming Salon, Dog Bathing, Pet Haircut, Pet Grooming Services, Pet Spa">
+  <!-- Open Graph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Grooming Gallery &amp; Transformations | PET GROOMING Salon Demo">
+  <meta property="og:description" content="Explore 8 illustrative grooming demonstration image cards across Bath &amp; Blow Dry, Haircut &amp; Styling, Long-Coat, Short-Coat, Puppy, and Full Grooming.">
+  <meta property="og:site_name" content="PET GROOMING">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <div class="demo-top-bar" role="region" aria-label="Demonstration Notice">
+    <strong>ILLUSTRATIVE DEMO GALLERY:</strong> Every gallery placeholder on this page represents illustrative demonstration content — not actual customer work.
+  </div>
+
+  <!-- Global Sticky Header -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="PET GROOMING Home">
+        <span class="brand-logo-mark" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="10" cy="11.5" rx="2.4" ry="3.2" transform="rotate(-18 10 11.5)" fill="currentColor"/>
+            <ellipse cx="15.5" cy="9.5" rx="2.4" ry="3.2" transform="rotate(-4 15.5 9.5)" fill="currentColor"/>
+            <ellipse cx="21" cy="11.5" rx="2.4" ry="3.2" transform="rotate(16 21 11.5)" fill="currentColor"/>
+            <path d="M10.2 19.5C10.2 16.4 12.8 14.3 15.6 14.3C18.4 14.3 21 16.4 21 19.5C21 21.8 19.1 23.2 17.1 23.2H14.1C12.1 23.2 10.2 21.8 10.2 19.5Z" fill="currentColor"/>
+            <path d="M9.5 26H21.5M11.5 26V28.2M14.2 26V28.2M16.9 26V28.2M19.5 26V28.2" stroke="#F3CBB7" stroke-width="1.6" stroke-linecap="round"/>
+            <path d="M25.5 4.5L26.2 6.8L28.5 7.5L26.2 8.2L25.5 10.5L24.8 8.2L22.5 7.5L24.8 6.8L25.5 4.5Z" fill="#F3CBB7"/>
+          </svg>
+        </span>
+        <span class="brand-text-wrap">
+          <span class="brand-title">PET GROOMING</span>
+          <span class="brand-subtitle">Boutique Salon Demo</span>
+        </span>
+      </a>
+
+      <button class="mobile-menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="hamburger-box">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+
+      <nav class="nav-menu" id="primary-navigation" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link active" aria-current="page">Gallery</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <a href="booking.html" class="btn btn-primary">Book an Appointment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Hero -->
+    <section class="page-hero">
+      <div class="container page-hero-inner reveal">
+        <span class="eyebrow">Visual Showcase</span>
+        <h1>SMALL DETAILS. BEAUTIFUL TRANSFORMATIONS.</h1>
+        <p>Filter through 8 illustrative grooming demonstration cards, open any card in the interactive lightbox modal, or test the before-and-after comparison slider.</p>
+      </div>
+    </section>
+
+    <!-- Gallery Filters & 8 Demonstration Image Cards -->
+    <section class="section">
+      <div class="container">
+        <!-- Category Filter Buttons -->
+        <div class="gallery-filters reveal" role="group" aria-label="Filter gallery items by grooming category">
+          <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All Transformations (8)</button>
+          <button type="button" class="filter-btn" data-filter="bath-blow-dry" aria-pressed="false">Bath &amp; Blow Dry</button>
+          <button type="button" class="filter-btn" data-filter="haircut-styling" aria-pressed="false">Haircut &amp; Styling</button>
+          <button type="button" class="filter-btn" data-filter="long-coat" aria-pressed="false">Long-Coat Grooming</button>
+          <button type="button" class="filter-btn" data-filter="short-coat" aria-pressed="false">Short-Coat Grooming</button>
+          <button type="button" class="filter-btn" data-filter="puppy-grooming" aria-pressed="false">Puppy Grooming</button>
+          <button type="button" class="filter-btn" data-filter="full-grooming" aria-pressed="false">Full Grooming</button>
+        </div>
+
+        <!-- 8 Large Demonstration Image Cards -->
+        <div class="gallery-grid">
+          <!-- Gallery Card 01 -->
+          <article class="gallery-card reveal"
+            data-gallery-item
+            data-category="bath-blow-dry"
+            data-cat-label="Bath &amp; Blow Dry"
+            data-title="Golden Retriever Warm Spa Bath &amp; Fluff Dry"
+            data-desc="Demonstration of a deep coat wash, warm towel wrap, and high-velocity fluff drying for a golden retriever."
+            data-filename="grooming-gallery-01.jpeg"
+            data-img-src="images/grooming-gallery-01.jpeg"
+            data-ratio="4:3 • 1200×900px">
+            <div class="gallery-card-media" data-lightbox-open tabindex="0" role="button" aria-label="Open Golden Retriever Warm Spa Bath &amp; Fluff Dry in Lightbox">
+              <span class="gallery-zoom-trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                View Lightbox
+              </span>
+              <div class="img-frame ratio-landscape" role="img" aria-label="Illustrative Demo Image: Golden Retriever Warm Spa Bath and Fluff Dry (grooming-gallery-01.jpeg)">
+                <img src="images/grooming-gallery-01.jpeg" alt="Golden Retriever Warm Spa Bath &amp; Fluff Dry" width="1200" height="900" loading="lazy" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION</span>
+              </div>
+            </div>
+            <div class="gallery-card-body">
+              <div class="gallery-card-meta">
+                <span class="gallery-cat-tag">Bath &amp; Blow Dry</span>
+                <code style="font-size:0.75rem; color:var(--color-text-muted);">Card #01</code>
+              </div>
+              <h3>Golden Retriever Warm Spa Bath &amp; Fluff Dry</h3>
+              <p>Demonstration of a deep coat wash, warm towel wrap, and velocity fluff drying for a golden coat.</p>
+              <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+            </div>
+          </article>
+
+          <!-- Gallery Card 02 -->
+          <article class="gallery-card reveal"
+            data-gallery-item
+            data-category="haircut-styling"
+            data-cat-label="Haircut &amp; Styling"
+            data-title="Miniature Poodle Rounded Teddy Trim"
+            data-desc="Illustrative scissor-finished facial rounding and balanced leg styling for a curly apricot miniature poodle."
+            data-filename="grooming-gallery-02.jpeg"
+            data-img-src="images/grooming-gallery-02.jpeg"
+            data-ratio="4:3 • 1200×900px">
+            <div class="gallery-card-media" data-lightbox-open tabindex="0" role="button" aria-label="Open Miniature Poodle Rounded Teddy Trim in Lightbox">
+              <span class="gallery-zoom-trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                View Lightbox
+              </span>
+              <div class="img-frame ratio-landscape" role="img" aria-label="Illustrative Demo Image: Miniature Poodle Rounded Teddy Trim (grooming-gallery-02.jpeg)">
+                <img src="images/grooming-gallery-02.jpeg" alt="Miniature Poodle Rounded Teddy Trim" width="1200" height="900" loading="lazy" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION</span>
+              </div>
+            </div>
+            <div class="gallery-card-body">
+              <div class="gallery-card-meta">
+                <span class="gallery-cat-tag">Haircut &amp; Styling</span>
+                <code style="font-size:0.75rem; color:var(--color-text-muted);">Card #02</code>
+              </div>
+              <h3>Miniature Poodle Rounded Teddy Trim</h3>
+              <p>Illustrative scissor-finished facial rounding and balanced leg styling for a curly apricot poodle.</p>
+              <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+            </div>
+          </article>
+
+          <!-- Gallery Card 03 -->
+          <article class="gallery-card reveal"
+            data-gallery-item
+            data-category="long-coat"
+            data-cat-label="Long-Coat Grooming"
+            data-title="Australian Shepherd Silky Feathering &amp; Undercoat Brush-Out"
+            data-desc="Demonstration of gentle detangling, line brushing, and natural outline tidying for a long double coat."
+            data-filename="grooming-gallery-03.jpeg"
+            data-img-src="images/grooming-gallery-03.jpeg"
+            data-ratio="4:3 • 1200×900px">
+            <div class="gallery-card-media" data-lightbox-open tabindex="0" role="button" aria-label="Open Australian Shepherd Silky Feathering in Lightbox">
+              <span class="gallery-zoom-trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                View Lightbox
+              </span>
+              <div class="img-frame ratio-landscape" role="img" aria-label="Illustrative Demo Image: Australian Shepherd Silky Feathering and Undercoat Brush-Out (grooming-gallery-03.jpeg)">
+                <img src="images/grooming-gallery-03.jpeg" alt="Australian Shepherd Long-Coat Brush-Out" width="1200" height="900" loading="lazy" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION</span>
+              </div>
+            </div>
+            <div class="gallery-card-body">
+              <div class="gallery-card-meta">
+                <span class="gallery-cat-tag">Long-Coat Grooming</span>
+                <code style="font-size:0.75rem; color:var(--color-text-muted);">Card #03</code>
+              </div>
+              <h3>Australian Shepherd Long-Coat Brush-Out</h3>
+              <p>Demonstration of gentle detangling, line brushing, and natural outline tidying for a long double coat.</p>
+              <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+            </div>
+          </article>
+
+          <!-- Gallery Card 04 -->
+          <article class="gallery-card reveal"
+            data-gallery-item
+            data-category="short-coat"
+            data-cat-label="Short-Coat Grooming"
+            data-title="Beagle Glossy Short-Coat Wash &amp; De-Shedding Carding"
+            data-desc="Illustrative rubber-curry bath massage, loose hair removal, and paw pad tidy for a short-coated hound."
+            data-filename="grooming-gallery-04.jpeg"
+            data-img-src="images/grooming-gallery-04.jpeg"
+            data-ratio="4:3 • 1200×900px">
+            <div class="gallery-card-media" data-lightbox-open tabindex="0" role="button" aria-label="Open Beagle Glossy Short-Coat Wash in Lightbox">
+              <span class="gallery-zoom-trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                View Lightbox
+              </span>
+              <div class="img-frame ratio-landscape" role="img" aria-label="Illustrative Demo Image: Beagle Glossy Short-Coat Wash and De-Shedding (grooming-gallery-04.jpeg)">
+                <img src="images/grooming-gallery-04.jpeg" alt="Beagle Glossy Short-Coat De-Shedding" width="1200" height="900" loading="lazy" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION</span>
+              </div>
+            </div>
+            <div class="gallery-card-body">
+              <div class="gallery-card-meta">
+                <span class="gallery-cat-tag">Short-Coat Grooming</span>
+                <code style="font-size:0.75rem; color:var(--color-text-muted);">Card #04</code>
+              </div>
+              <h3>Beagle Glossy Short-Coat De-Shedding</h3>
+              <p>Illustrative rubber-curry bath massage, loose hair removal, and paw pad tidy for a short-coated pet.</p>
+              <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+            </div>
+          </article>
+
+          <!-- Gallery Card 05 -->
+          <article class="gallery-card reveal"
+            data-gallery-item
+            data-category="puppy-grooming"
+            data-cat-label="Puppy Grooming"
+            data-title="Cavalier Spaniel Puppy First Salon Familiarization"
+            data-desc="Demonstration of a calm puppy introduction featuring gentle face wiping, warm air acclimation, and paw handling."
+            data-filename="grooming-gallery-05.jpeg"
+            data-img-src="images/grooming-gallery-05.jpeg"
+            data-ratio="4:3 • 1200×900px">
+            <div class="gallery-card-media" data-lightbox-open tabindex="0" role="button" aria-label="Open Cavalier Spaniel Puppy First Salon Familiarization in Lightbox">
+              <span class="gallery-zoom-trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                View Lightbox
+              </span>
+              <div class="img-frame ratio-landscape" role="img" aria-label="Illustrative Demo Image: Cavalier Spaniel Puppy First Salon Familiarization (grooming-gallery-05.jpeg)">
+                <img src="images/grooming-gallery-05.jpeg" alt="Cavalier Puppy First Salon Introduction" width="1200" height="900" loading="lazy" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION</span>
+              </div>
+            </div>
+            <div class="gallery-card-body">
+              <div class="gallery-card-meta">
+                <span class="gallery-cat-tag">Puppy Grooming</span>
+                <code style="font-size:0.75rem; color:var(--color-text-muted);">Card #05</code>
+              </div>
+              <h3>Cavalier Puppy First Salon Introduction</h3>
+              <p>Demonstration of a calm puppy session featuring gentle comb familiarization and eye-corner tidying.</p>
+              <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+            </div>
+          </article>
+
+          <!-- Gallery Card 06 -->
+          <article class="gallery-card reveal"
+            data-gallery-item
+            data-category="full-grooming"
+            data-cat-label="Full Grooming"
+            data-title="Bichon Frise Plush Cloud Full Package Transformation"
+            data-desc="Complete head-to-paw demonstration including bath, fluff dry, scissor shaping, and nail care."
+            data-filename="grooming-gallery-06.jpeg"
+            data-img-src="images/grooming-gallery-06.jpeg"
+            data-ratio="4:3 • 1200×900px">
+            <div class="gallery-card-media" data-lightbox-open tabindex="0" role="button" aria-label="Open Bichon Frise Plush Cloud Full Package Transformation in Lightbox">
+              <span class="gallery-zoom-trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                View Lightbox
+              </span>
+              <div class="img-frame ratio-landscape" role="img" aria-label="Illustrative Demo Image: Bichon Frise Plush Cloud Full Package Transformation (grooming-gallery-06.jpeg)">
+                <img src="images/grooming-gallery-06.jpeg" alt="Bichon Frise Plush Cloud Full Groom" width="1200" height="900" loading="lazy" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION</span>
+              </div>
+            </div>
+            <div class="gallery-card-body">
+              <div class="gallery-card-meta">
+                <span class="gallery-cat-tag">Full Grooming</span>
+                <code style="font-size:0.75rem; color:var(--color-text-muted);">Card #06</code>
+              </div>
+              <h3>Bichon Frise Plush Cloud Full Groom</h3>
+              <p>Complete head-to-paw demonstration including bath, fluff dry, scissor shaping, and nail care.</p>
+              <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+            </div>
+          </article>
+
+          <!-- Gallery Card 07 -->
+          <article class="gallery-card reveal"
+            data-gallery-item
+            data-category="haircut-styling"
+            data-cat-label="Haircut &amp; Styling"
+            data-title="Shih Tzu Practical Everyday Low-Maintenance Trim"
+            data-desc="Owner-preferred practical body length with a tidy round muzzle and clean paw pads for easy home care."
+            data-filename="grooming-gallery-07.jpeg"
+            data-img-src="images/grooming-gallery-07.jpeg"
+            data-ratio="4:3 • 1200×900px">
+            <div class="gallery-card-media" data-lightbox-open tabindex="0" role="button" aria-label="Open Shih Tzu Practical Everyday Low-Maintenance Trim in Lightbox">
+              <span class="gallery-zoom-trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                View Lightbox
+              </span>
+              <div class="img-frame ratio-landscape" role="img" aria-label="Illustrative Demo Image: Shih Tzu Practical Everyday Low-Maintenance Trim (grooming-gallery-07.jpeg)">
+                <img src="images/grooming-gallery-07.jpeg" alt="Shih Tzu Everyday Low-Maintenance Trim" width="1200" height="900" loading="lazy" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION</span>
+              </div>
+            </div>
+            <div class="gallery-card-body">
+              <div class="gallery-card-meta">
+                <span class="gallery-cat-tag">Haircut &amp; Styling</span>
+                <code style="font-size:0.75rem; color:var(--color-text-muted);">Card #07</code>
+              </div>
+              <h3>Shih Tzu Everyday Low-Maintenance Trim</h3>
+              <p>Owner-preferred practical body length with a tidy round muzzle and clean paw pads for easy care.</p>
+              <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+            </div>
+          </article>
+
+          <!-- Gallery Card 08 -->
+          <article class="gallery-card reveal"
+            data-gallery-item
+            data-category="long-coat"
+            data-cat-label="Long-Coat Grooming"
+            data-title="Persian Cat Gentle Coat Combing &amp; Sanitary Tidy"
+            data-desc="Illustrative calm feline brushing session removing loose undercoat knots in a quiet salon room."
+            data-filename="grooming-gallery-08.jpeg"
+            data-img-src="images/grooming-gallery-08.jpeg"
+            data-ratio="4:3 • 1200×900px">
+            <div class="gallery-card-media" data-lightbox-open tabindex="0" role="button" aria-label="Open Persian Cat Gentle Coat Combing in Lightbox">
+              <span class="gallery-zoom-trigger">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                View Lightbox
+              </span>
+              <div class="img-frame ratio-landscape" role="img" aria-label="Illustrative Demo Image: Persian Cat Gentle Coat Combing and Sanitary Tidy (grooming-gallery-08.jpeg)">
+                <img src="images/grooming-gallery-08.jpeg" alt="Long-Haired Cat Gentle Coat Combing" width="1200" height="900" loading="lazy" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION</span>
+              </div>
+            </div>
+            <div class="gallery-card-body">
+              <div class="gallery-card-meta">
+                <span class="gallery-cat-tag">Long-Coat Grooming</span>
+                <code style="font-size:0.75rem; color:var(--color-text-muted);">Card #08</code>
+              </div>
+              <h3>Long-Haired Cat Gentle Coat Combing</h3>
+              <p>Illustrative calm feline brushing session removing loose undercoat knots (where feline care is offered).</p>
+              <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Before-and-After Comparison Slider Section -->
+    <section class="section section-cream">
+      <div class="container container-narrow">
+        <div class="section-header reveal">
+          <span class="eyebrow eyebrow-peach">Interactive Comparison</span>
+          <h2>Before &amp; After Transformation Slider</h2>
+          <p>Use the drag handle or keyboard arrow keys to inspect the illustrative before-and-after grooming comparison.</p>
+        </div>
+
+        <div class="ba-slider-card reveal">
+          <div class="ba-slider-viewport" data-ba-slider>
+            <span class="ba-badge ba-badge-before">Before Grooming (Demo)</span>
+            <span class="ba-badge ba-badge-after">After Grooming (Demo)</span>
+
+            <!-- AFTER Layer -->
+            <div class="ba-layer ba-layer-after">
+              <div class="img-frame" style="width: 100%; height: 100%; border-radius: 0; border: none;" role="img" aria-label="Illustrative Demo Image After: Freshly bathed and styled fluffy dog (grooming-after.jpeg)">
+                <img src="images/grooming-after.jpeg" alt="Clean, fluffed and evenly scissor-trimmed coat after grooming" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION — AFTER GROOMING</span>
+              </div>
+            </div>
+
+            <!-- BEFORE Layer -->
+            <div class="ba-layer ba-layer-before">
+              <div class="img-frame" style="width: 100%; height: 100%; border-radius: 0; border: none;" role="img" aria-label="Illustrative Demo Image Before: Unbrushed overgrown coat prior to grooming (grooming-before.jpeg)">
+                <img src="images/grooming-before.jpeg" alt="Overgrown, unbrushed coat before bath and trim" class="card-img">
+                <span class="img-demo-badge">ILLUSTRATIVE DEMO TRANSFORMATION — BEFORE GROOMING</span>
+              </div>
+            </div>
+
+            <div class="ba-divider-line" aria-hidden="true"></div>
+            <div class="ba-handle-btn" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M18 8L22 12L18 16"/><path d="M6 8L2 12L6 16"/></svg>
+            </div>
+            <input type="range" class="ba-range-input" min="0" max="100" value="50" aria-label="Before and after grooming transformation slider">
+          </div>
+
+          <div class="ba-slider-caption">
+            <div>
+              <h3>Complete Coat &amp; Facial Tidy Comparison</h3>
+              <p>Matched camera angle and lighting comparison pair in an interactive drag slider.</p>
+            </div>
+            <span class="demo-badge">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox-modal" id="gallery-lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-modal-title">
+      <div class="lightbox-dialog">
+        <div class="lightbox-header">
+          <div>
+            <span class="gallery-cat-tag" data-lightbox-cat>Category</span>
+            <h3 id="lightbox-modal-title" data-lightbox-title>Grooming Transformation</h3>
+          </div>
+          <button type="button" class="lightbox-close" data-lightbox-close aria-label="Close lightbox modal">&times;</button>
+        </div>
+
+        <div class="img-frame ratio-landscape" style="margin-bottom: 1rem;">
+          <img data-lightbox-img id="lightbox-main-img" class="card-img" src="images/grooming-gallery-01.jpeg" alt="Selected Grooming Demonstration Visual">
+          <span class="img-demo-badge">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+        </div>
+
+        <p data-lightbox-desc style="margin-bottom: 0.75rem;"></p>
+        <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+
+        <div class="lightbox-Controls">
+          <button type="button" class="btn btn-outline" data-lightbox-prev style="padding: 0.55rem 1.2rem;">
+            &larr; Previous Image
+          </button>
+          <span data-lightbox-counter style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-muted);">Item 1 of 8</span>
+          <button type="button" class="btn btn-primary" data-lightbox-next style="padding: 0.55rem 1.2rem;">
+            Next Image &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+
+        <p data-lightbox-desc style="margin-bottom: 0.75rem;"></p>
+        <span class="gallery-mandatory-label">ILLUSTRATIVE DEMO IMAGE — NOT ACTUAL CUSTOMER WORK.</span>
+
+        <div class="lightbox-Controls">
+          <button type="button" class="btn btn-outline" data-lightbox-prev style="padding: 0.55rem 1.2rem;">
+            &larr; Previous Image
+          </button>
+          <span data-lightbox-counter style="font-size: 0.85rem; font-weight: 600; color: var(--color-text-muted);">Item 1 of 8</span>
+          <button type="button" class="btn btn-primary" data-lightbox-next style="padding: 0.55rem 1.2rem;">
+            Next Image &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo" style="color: var(--color-ivory); margin-bottom: 1rem;">
+            <span class="brand-logo-mark" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="10" cy="11.5" rx="2.4" ry="3.2" transform="rotate(-18 10 11.5)" fill="currentColor"/>
+                <ellipse cx="15.5" cy="9.5" rx="2.4" ry="3.2" transform="rotate(-4 15.5 9.5)" fill="currentColor"/>
+                <ellipse cx="21" cy="11.5" rx="2.4" ry="3.2" transform="rotate(16 21 11.5)" fill="currentColor"/>
+                <path d="M10.2 19.5C10.2 16.4 12.8 14.3 15.6 14.3C18.4 14.3 21 16.4 21 19.5C21 21.8 19.1 23.2 17.1 23.2H14.1C12.1 23.2 10.2 21.8 10.2 19.5Z" fill="currentColor"/>
+                <path d="M9.5 26H21.5M11.5 26V28.2M14.2 26V28.2M16.9 26V28.2M19.5 26V28.2" stroke="#F3CBB7" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span class="brand-text-wrap">
+              <span class="brand-title">PET GROOMING</span>
+              <span class="brand-subtitle" style="color: var(--color-peach);">Boutique Salon Demo</span>
+            </span>
+          </a>
+          <p style="color: rgba(255,249,241,0.72); font-size: 0.9rem; max-width: 34ch;">
+            A premium frontend demonstration website showcasing pet grooming services, gentle handling principles, and modern pet spa design.
+          </p>
+        </div>
+
+        <div>
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services &amp; Packages</a></li>
+            <li><a href="gallery.html">Grooming Gallery</a></li>
+            <li><a href="about.html">About &amp; Team</a></li>
+            <li><a href="booking.html">Book an Appointment</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Sample Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#bath-blow-dry">Bath &amp; Blow Dry</a></li>
+            <li><a href="services.html#haircut-styling">Haircut &amp; Styling</a></li>
+            <li><a href="services.html#nail-paw-care">Nail &amp; Paw Care</a></li>
+            <li><a href="services.html#ear-hygiene">Ear &amp; Hygiene Care</a></li>
+            <li><a href="services.html#deshedding-care">De-shedding &amp; Coat Care</a></li>
+            <li><a href="services.html#puppy-intro">Puppy Introduction</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Demo Contact Info</h4>
+          <ul class="footer-links" style="font-size: 0.88rem;">
+            <li>Phone: 0000000000 (Fictional)</li>
+            <li>Email: <a href="mailto:demo@example.com">demo@example.com</a></li>
+            <li>Address: Plot No. 000, Demo Road, Sample Area, Hyderabad, Telangana – 000000</li>
+            <li>Hours: Mon–Sat, 9 AM–6 PM (Demo)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 PET GROOMING — Generic Demonstration Website. All content is illustrative.</span>
+        <span>Built with Pure HTML5, CSS3 &amp; Vanilla JavaScript</span>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
